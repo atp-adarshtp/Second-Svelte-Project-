@@ -1,1 +1,3 @@
-<h1>single product</h1>
+<script>
+    export let product;
+</script>
