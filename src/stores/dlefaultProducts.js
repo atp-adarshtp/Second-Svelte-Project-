@@ -1,6 +1,6 @@
     import { writable } from "svelte/store";
     import localProducts from '../defaultProducts'; 
-    const store = writable(flattenProducts([...localProducts]));
+    const store = writable([]);
 
 
     function flattenProducts(data) {
