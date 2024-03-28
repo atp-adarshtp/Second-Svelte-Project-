@@ -12,7 +12,7 @@
         {#each $products as product (product.id)}
             <Product {product} />
             {:else}
-            <Loading/>
+            <Loading />
         {/each}
     </div>
 </section>
