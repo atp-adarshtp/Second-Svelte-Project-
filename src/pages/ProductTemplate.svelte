@@ -3,6 +3,7 @@
     import products from "../stores/defaultProducts";
     import Loading from "../components/Loading.svelte";
     import { link } from "svelte-routing";
+    import globaleStore from "../stores/globalStore";
     $: product = $products.find((item) => item.id == parseInt(id));
 </script>
 

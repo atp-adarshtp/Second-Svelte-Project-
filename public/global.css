@@ -84,8 +84,8 @@ Buttons
 .btn-primary {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
-  border: 2px solid var(--primaryColor);
+  color: #3a6da3;
+  border: 2px solid #3a6da3;
   padding: 0.45rem 0.8rem;
   display: inline-block;
   transition: var(--mainTransition);
@@ -94,7 +94,7 @@ Buttons
   background: transparent;
 }
 .btn:hover {
-  background: var(--primaryColor);
+  background: #3a6da3;
   color: var(--mainWhite);
 }
 .btn-white {
@@ -104,16 +104,16 @@ Buttons
 }
 .btn-white:hover {
   background: var(--mainWhite);
-  color: var(--primaryColor);
+  color: #3a6da3;
 }
 .btn-primary {
-  background: var(--primaryColor);
+  background: #3a6da3;
   color: var(--mainWhite);
-  border-color: var(--primaryColor);
+  border-color: #3a6da3;
 }
 .btn-primary:hover {
   background: transparent;
-  color: var(--primaryColor);
+  color: #3a6da3;
 }
 .btn-block {
   width: 100%;
@@ -139,7 +139,7 @@ Navbar
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid var(--primaryColor);
+  border-bottom: 2px solid #3a6da3;
   box-shadow: var(--lightShadow);
 }
 .nav-container {
@@ -173,7 +173,7 @@ Navbar
 .btn-cart-items {
   display: block;
   position: absolute;
-  background: var(--primaryColor);
+  background: #3a6da3;
   top: -45%;
   right: -40%;
   padding: 0rem 0.3rem;
@@ -198,7 +198,7 @@ Navbar
 }
 .nav-links a:hover,
 .nav-aside a:hover {
-  color: var(--primaryColor);
+  color: #3a6da3;
 }
 .nav-logo {
   line-height: 0;
@@ -235,7 +235,7 @@ Hero
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--primaryDarkColor);
+  color: #20466e;
 }
 .banner {
   margin-top: 5rem;
@@ -256,11 +256,11 @@ Hero
   border-radius: 0;
   font-weight: bold;
   padding: 0.8rem 1.5rem;
-  background: var(--primaryDarkColor);
-  border-color: var(--primaryDarkColor);
+  background: #20466e;
+  border-color: #20466e;
 }
 .btn-hero:hover {
-  color: var(--primaryDarkColor);
+  color: #20466e;
 }
 @media screen and (min-width: 768px) {
   .banner {
@@ -358,7 +358,7 @@ Products
   margin-bottom: 0.5rem;
 }
 .product-price {
-  color: var(--primaryColor);
+  color: #3a6da3;
   font-weight: bold;
   margin-bottom: 0;
   font-size: 1.1rem;
@@ -407,7 +407,7 @@ Sidebar
   transition: var(--mainTransition);
 }
 .sidebar-links a:hover {
-  color: var(--primaryColor);
+  color: #3a6da3;
   padding-left: 0.5rem;
 }
 /* 
@@ -463,7 +463,7 @@ Cart Modal
 }
 .cart-login a {
   text-transform: uppercase;
-  color: var(--primaryColor);
+  color: #3a6da3;
 }
 /* 
 ====== 
@@ -494,7 +494,7 @@ Single Product
   letter-spacing: var(--mainSpacing);
 }
 .single-product h2 {
-  color: var(--primaryColor);
+  color: #3a6da3;
 }
 .single-product p {
   line-height: 2;
@@ -578,7 +578,7 @@ Cart Items
   font-size: 0.8rem;
 }
 .amount-btn {
-  color: var(--primaryColor);
+  color: #3a6da3;
   font-size: 1rem;
 }
 /* 
@@ -625,7 +625,7 @@ Expense Form
 .register-link button {
   background: transparent;
   border: none;
-  color: var(--primaryColor);
+  color: #3a6da3;
   text-transform: capitalize;
   font-size: inherit;
   display: inline-block;
@@ -703,7 +703,7 @@ Checkout
   color: var(--darkGrey);
 }
 .stripe-info span {
-  color: var(--primaryColor);
+  color: #3a6da3;
 }
 #card-element {
   border: 2px solid var(--darkGrey);
