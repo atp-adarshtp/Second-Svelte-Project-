@@ -28,6 +28,7 @@ const toggleAmount = (id, items, action) => {
     })
 }
 // global functions
+// increaseAmount amound cart items
 export const removeItem = id => {
     cart.update(storeValue => {
         return remove(id, storeValue)
@@ -38,6 +39,22 @@ export const increaseAmount = id => {
         return toggleAmount(id, storeValue, "inc")
     })
 }
-// localStorage
+
+// decrease Amount cart items
+export const decreaseAmount = id => {
+    cart.update(storeValue => {
+       let item = storeValue.find(item => item.id === id);
+       let cart; // Correcting variable name from 'cart' to 'updatedCart'
+       if(item.amount === 1){
+        cart = remove(id,storeValue); // Corrected variable assignment
+       }
+       else {
+        cart = toggleAmount(id,storeValue,'dec'); // Corrected variable assignment
+       }
+       return [...cart]; // Corrected return statement
+    })
+}
+
+localStorage
 
 export default cart;
