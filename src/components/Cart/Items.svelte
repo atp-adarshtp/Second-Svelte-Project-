@@ -7,7 +7,7 @@
     // import cart methods
     import {
         removeItem,
-        increaseAmount,
+        increaseAmount ,
         decreaseAmount,
     } from "../../stores/cart";
 </script>
@@ -40,7 +40,7 @@
         <button
             class="cart-btn amount-btn"
             on:click={() => {
-                decreaseAmount(id);
+                decreaseAmount(id,amount);
             }}
             ><i class="fas fa-chevron-down" />
         </button>
