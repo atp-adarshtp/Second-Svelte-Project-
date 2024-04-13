@@ -43,18 +43,30 @@ export const increaseAmount = id => {
 // decrease Amount cart items
 export const decreaseAmount = (id, amount) => {
     cart.update(storeValue => {
-    //    let item = storeValue.find(item => item.id === id);
-       let cart; // Correcting variable name from 'cart' to 'updatedCart'
-       if(amount === 1){
-        cart = remove(id,storeValue); // Corrected variable assignment
-       }
-       else {
-        cart = toggleAmount(id,storeValue,'dec'); // Corrected variable assignment
-       }
-       return [...cart]; // Corrected return statement
+        //    let item = storeValue.find(item => item.id === id);
+        let cart; // Correcting variable name from 'cart' to 'updatedCart'
+        if (amount === 1) {
+            cart = remove(id, storeValue); // Corrected variable assignment
+        }
+        else {
+            cart = toggleAmount(id, storeValue, 'dec'); // Corrected variable assignment
+        }
+        return [...cart]; // Corrected return statement
+    });
+};
+
+export const addToCart = product => {
+    store.update(storeValue => {
+        const { id, image, title, price } = product;
+        let item = storeValue.find(item => item.id === id);
+        let cart;
+        if (item) {
+            cart = toggleAmount(id, storeValue, 'inc')
+        }
+        else {
+            let newItem = { id, image, title, price, amount:1 }
+            cart = [...storeValue,newItem]
+        }
     })
 }
-
-localStorage
-
 export default cart;
