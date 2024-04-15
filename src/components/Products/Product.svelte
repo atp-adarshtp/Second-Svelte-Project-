@@ -6,6 +6,7 @@
 
     // Destructure the properties from the product object
     const { title, image, price, id } = product;
+    console.log({id});
 </script>
 
 <article class="product">
@@ -20,3 +21,4 @@
         <p class="product-price">${price}</p>
     </div>
 </article>
+

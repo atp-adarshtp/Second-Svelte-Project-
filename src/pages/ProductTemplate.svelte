@@ -1,6 +1,6 @@
 <script>
     export let id;
-    export let location;
+    export const location = undefined; // Initialize location with a default value
     import { addToCart } from "../stores/cart";
     import products from "../stores/defaultProducts";
     import Loading from "../components/Loading.svelte";
@@ -8,6 +8,8 @@
     import globaleStore from "../stores/globalStore";
     $: product = $products.find((item) => item.id == parseInt(id));
 </script>
+
+
 
 <svelte:head>
     <title>{!product ? "single product" : product.title}</title>

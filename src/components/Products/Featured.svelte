@@ -1,6 +1,6 @@
 <script>
     export let title = "";
-    import products,{featuredStore} from "../../stores/defaultProducts";
+    import product,{featuredStore} from "../../stores/defaultProducts";
     import Product from "./Product.svelte";
     import Loading from "../Loading.svelte";
     // $: featured = $products.filter((item) => item.featured === true);
