@@ -2,8 +2,7 @@
     import CartButton from "../Cart/CartButton.svelte";
     import { link } from "svelte-routing";
     import links from "../../constants/links";
-    // import { home } from "nodemon/lib/utils";
-    // import Product from "../Products/Product.svelte";
+   import LoginLink from "../LoginLink.svelte";
 </script>
 
 <nav class="navbar">
@@ -26,6 +25,7 @@
         </div>
     </div>
     <div class="nav-aside">
+        <LoginLink />
         <CartButton />
     </div>
 </nav>
