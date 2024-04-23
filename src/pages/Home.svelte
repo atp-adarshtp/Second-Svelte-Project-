@@ -5,6 +5,6 @@
 </script>
 
 <Hero>
-    <a href="/products" class="btn btn-primary btn-hero" use:link>shop now</a>
+    <a href="../components/Products/Featured" class="btn btn-primary btn-hero" use:link>shop now</a>
 </Hero>
 <Featured title="featured products" />

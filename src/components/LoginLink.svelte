@@ -13,10 +13,8 @@
         }}>logout</a
     >
 {:else}
-    <a
-        href="/login"
+    <a href="/login"
         on:click={() => {
             globalStore.toggleItem("sidebar", false);
-        }}>login</a
-    >
+        }}>login</a>
 {/if}

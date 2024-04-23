@@ -5,7 +5,7 @@
     import products from "../stores/defaultProducts";
     import Loading from "../components/Loading.svelte";
     import { link } from "svelte-routing";
-    import globaleStore from "../stores/globalStore";
+    // import globaleStore from "../stores/globalStore";
     $: product = $products.find((item) => item.id == parseInt(id));
 </script>
 
@@ -20,7 +20,7 @@
 {:else}
     <section class="single-product">
         <!-- back to products -->
-        <a href="/products" use:link class="btn btn-primary">back to products</a
+        <a href="/Products" use:link class="btn btn-primary">back to products</a
         >
         <!-- single product container -->
         <div class="single-product-container">
