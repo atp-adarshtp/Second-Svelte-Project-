@@ -215,4 +215,4 @@ export default [
       updated_at: "2019-10-28T20:12:30.387Z"
     }
   }
-];
+];;
