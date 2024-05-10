@@ -9,7 +9,7 @@
         href="/"
         class="logout-btn"
         on:click={() => {
-            globalStore.toggleItem("sidebar", false);
+            globalStore.toggleItem("sidebar", true);
         }}>logout</a
     >
 {:else}
